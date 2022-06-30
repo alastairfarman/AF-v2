@@ -142,12 +142,12 @@ section{
     top:50%;
     transform: translate(0, -50%);
     scroll-snap-align: center;
+    
 }
 
 img{
-    height: inherit;
+    max-height:70vh;
     width: auto;
-    max-width: 100vw;
 }
 
 #wb{
