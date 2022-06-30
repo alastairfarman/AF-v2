@@ -42,11 +42,10 @@ section{
 #retouch{
     --angle: 0deg;
     background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.9), 
-      rgba(255, 255, 255, 0.7)), 
-    linear-gradient(var(--angle), #743ad5, #d53a9d);
-    background-color: rgba(0,0,0);
+        -webkit-linear-gradient(
+        rgba(255, 255, 255, 0.9), 
+        rgba(255, 255, 255, 0.7)), 
+        -webkit-linear-gradient( #743ad5, #d53a9d);
     animation: 5s rotate linear infinite;
 }
 
@@ -57,10 +56,10 @@ section{
 }
 
 @property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
 
 
 #threeD{
