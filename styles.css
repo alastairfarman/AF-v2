@@ -147,6 +147,7 @@ section{
 img{
     height: inherit;
     width: auto;
+    max-width: 100vw;
 }
 
 #wb{
