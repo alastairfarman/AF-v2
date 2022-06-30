@@ -42,14 +42,20 @@ section{
 #retouch{
     --angle: 0deg;
     background-image:
-        -webkit-linear-gradient(
+        linear-gradient(
         rgba(255, 255, 255, 0.9), 
         rgba(255, 255, 255, 0.7)), 
-        -webkit-linear-gradient( #743ad5, #d53a9d);
+        linear-gradient(var(--angle), #743ad5, #d53a9d);
     animation: 5s rotate linear infinite;
 }
 
 @keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@-webkit-keyframes rotate {
 	to {
 		--angle: 360deg;
 	}
@@ -143,7 +149,10 @@ img{
     width: auto;
 }
 
-#wb{background-image:
+#wb{
+    background-image:
     linear-gradient(var(--angle), #000 33%,rgb(52, 15, 55) 66%, rgb(84, 143, 123));
     animation: 20s rotate linear infinite;
+    -webkit-animation: 20s rotate linear infinite;
+    background-color: #000;
 }
